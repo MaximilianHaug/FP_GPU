@@ -1,7 +1,8 @@
-from fp_gpu import *
+from fp_gpu import hello, sigmax, sigmay, sigmaz
+import numpy as np
 
-x = hello
-print(x())
+x_str: str = hello
+print(x_str)
 
 
 sx: np.ndarray = sigmax()
