@@ -1,6 +1,8 @@
-def hello() -> str:
-    return "Hello from fp-gpu!"
 import numpy as np
+
+
+def hello() -> str:
+	return 'Hello from fp-gpu!'
 
 
 def sigmax() -> np.ndarray:

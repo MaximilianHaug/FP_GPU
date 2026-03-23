@@ -1,2 +1,2 @@
 def hello() -> str:
-    return "Hello from fp-gpu!"
+	return 'Hello from fp-gpu!'

@@ -9,7 +9,35 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.4.3",
+    "pre-commit>=4.5.1",
+    "ruff>=0.15.7",
 ]
 
 
+[tool.ruff]
+line-length = 100
+# Exclude a variety of commonly ignored directories.
 
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true  # This forces you to write -> np.ndarray
+check_untyped_defs = true
+# This tells mypy that the package "fp_gpu" starts inside "src"
+mypy_path = "src"
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = "numpy.*"
+ignore_missing_imports = true
+
+[mypy]
+warn_return_any = true
+warn_unused_configs = true
