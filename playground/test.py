@@ -1,4 +1,3 @@
-
 from fp_gpu import *
 
 x = hello
@@ -9,9 +8,9 @@ sx: np.ndarray = sigmax()
 sy: np.ndarray = sigmay()
 sz: np.ndarray = sigmaz()
 
-print('Sigma X:\n', sx)
-print('Sigma Y:\n', sy)
-print('Sigma Z:\n', sz)
+print("Sigma X:\n", sx)
+print("Sigma Y:\n", sy)
+print("Sigma Z:\n", sz)
 
 
 # check equation:
@@ -19,9 +18,9 @@ left_side = sx @ sy
 right_side = 1j * sz
 
 if np.allclose(left_side, right_side):
-	print('The equation sxsy = isz holds.')
+    print("The equation sxsy = isz holds.")
 else:
-	print('The equation sxsy = isz does NOT hold.')
+    print("The equation sxsy = isz does NOT hold.")
 
 # uv venv
 # source .venv/bin/activate
