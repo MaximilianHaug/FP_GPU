@@ -1,6 +1,6 @@
 from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
 
-bits = 3
+bits = 4
 qreg_q = QuantumRegister(bits + 1, "q")
 creg_c = ClassicalRegister(bits, "c")
 circuit = QuantumCircuit(qreg_q, creg_c)
