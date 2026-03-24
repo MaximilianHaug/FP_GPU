@@ -1,7 +1,7 @@
 from fp_gpu import hello, sigmax, sigmay, sigmaz
 import numpy as np
 
-x_str: str = hello
+x_str = hello()
 print(x_str)
 
 

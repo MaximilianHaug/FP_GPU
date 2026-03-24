@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-src/fp_gpu/__init__.py
-src/fp_gpu/py.typed
-src/fp_gpu.egg-info/PKG-INFO
-src/fp_gpu.egg-info/SOURCES.txt
-src/fp_gpu.egg-info/dependency_links.txt
-src/fp_gpu.egg-info/requires.txt
-src/fp_gpu.egg-info/top_level.txt
